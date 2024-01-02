@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timer</title>
+        <link rel="stylesheet" href="css/shared.css" />
+        <link rel="stylesheet" href="css/timer.css" />
+    </head>
+    <body>
+        <main>
+            <div>
+                <div>
+                    <span id="time-left">00h 00m 00s</span>
+                </div>
+            </div>
+            <div id="number-box">
+                <div class="input-field">
+                    <input
+                        type="number"
+                        min="0"
+                        max="99"
+                        placeholder="hr"
+                        id="hours"
+                    />
+                    <label for="hours">Hr</label>
+                </div>
+
+                <div class="input-field">
+                    <input
+                        type="number"
+                        min="0"
+                        max="59"
+                        placeholder="min"
+                        id="minutes"
+                    />
+                    <label for="minutes">Min</label>
+                </div>
+
+                <div class="input-field">
+                    <input
+                        type="number"
+                        min="0"
+                        max="59"
+                        placeholder="sec"
+                        id="seconds"
+                    />
+                    <label for="seconds">Sec</label>
+                </div>
+            </div>
+            <div>
+                <button id="start-btn">Start</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <div>
+                <a href="/stopwatch.html">Switch to Stopwatch</a>
+            </div>
+        </main>
+
+        <script src="js/timer.js"></script>
+    </body>
+</html>
