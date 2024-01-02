@@ -1,0 +1,41 @@
+:root {
+    --color-white: #fefefe;
+    --color-black: #000;
+    --color-primary-dark: #2a2f4f;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    /* overflow: hidden; */
+    color: var(--color-primary-dark);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+@media (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
